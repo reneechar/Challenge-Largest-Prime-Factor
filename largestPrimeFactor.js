@@ -1,6 +1,14 @@
 exports.largestPrimeFactor = function(n){
-  var primeNumber = 0;
-  // do your work here
 
-  return primeNumber;
+  // do your work here
+  var divsor = 2;
+  
+  while (n%divsor !== 0) {
+  	divsor++;
+    while (n%divsor === 0 && divsor < n) {
+  	  n /= divsor;
+  	}
+  };
+
+  return n;
 };
