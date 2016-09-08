@@ -5,7 +5,7 @@ exports.largestPrimeFactor = function(n){
   
   while (n%divsor !== 0) {
   	divsor++;
-    while (n%divsor === 0 && divsor < n) {
+    while (n%divsor === 0 && divsor < (n/2)) {
   	  n /= divsor;
   	}
   };
